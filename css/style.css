@@ -1,0 +1,137 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Global CSS Reset */
+* {
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+:root {
+    /* Colors */
+    --color-red: hsl(0, 78%, 62%);
+    --color-cyan: hsl(180, 62%, 55%);
+    --color-orange: hsl(34, 97%, 64%);
+    --color-blue: hsl(212, 86%, 64%);
+
+    --color-neu-900: hsl(234, 12%, 34%);
+    --color-neu-400: hsl(229, 6%, 66%);
+    --color-neu-100: hsl(0, 0%, 98%);
+
+    --shadow-color: rgba(0, 50, 100, 2);
+
+    /* Fonts */
+    --FF-sans: "Poppins", sans-serif;
+
+    --FS-400: 0.9375rem; /* 15px */
+    --FS-500: 1.25rem;   /* 20px */
+    --FS-600: 1.625rem;  /* 26px */
+    --FS-900: 2.5rem;    /* 40px */
+
+    --FW-light: 200;
+    --FW-normal: 400;
+    --FW-bold: 600;
+
+    /* Other Styles */
+    --gap: 2rem;
+    --box-shadow: 0 0.5rem 1rem -0.5rem var(--shadow-color);
+    --box-border-radius: 0.325rem;
+}
+
+/* General Styling */
+html {
+    font-family: var(--FF-sans);
+    font-weight: var(--FW-normal);
+    line-height: 1.7;
+    color: var(--color-neu-400);
+}
+
+body {
+    margin: 0;
+    padding-block-end: 5rem;
+}
+
+h1, h2, h3 {
+    color: var(--color-neu-900);
+    line-height: 1.2;
+}
+
+/* Wrapper Style */
+.wrapper {
+    padding-inline: 2rem;
+    max-width: 68.75rem;
+    margin-inline: auto;
+}
+
+.wrapper-narrow {
+    max-width: 34.375rem;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    margin-block: 6rem;
+}
+
+h1 {
+    font-weight: var(--FW-light);
+    font-size: var(--FS-900);
+}
+
+h1 span {
+    font-weight: var(--FW-bold);
+}
+
+header > p {
+    font-size: var(--FS-500);
+}
+
+/* Grid Section */
+.layout-grid {
+    display: flex;
+    gap: var(--gap);
+}
+
+.layout-grid > * {
+    flex: 1;
+}
+
+.col {
+    display: grid;
+    align-content: center;
+    gap: var(--gap);
+}
+
+.card {
+    padding: 2rem;
+    border-top: var(--box-border-radius) solid;
+    border-radius: var(--box-border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.card__title {
+    font-size: var(--FS-600);
+    margin: 0;
+}
+
+.card__img {
+    display: block;
+    margin-left: auto;
+    margin-top: 2rem;
+}
+
+.border-cyan {
+    border-color: var(--color-cyan);
+}
+
+.border-red {
+    border-color: var(--color-red);
+}
+
+.border-orange {
+    border-color: var(--color-orange);
+}
+
+.border-blue {
+    border-color: var(--color-blue);
+}
