@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://www.frontendmentor.io/solutions/four-card-feature-section-AntR6kOGhq)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/four-card-feature-section-HKwj-_zG4P)
 - Live Site URL: [Live Preview](https://kylecreate-fourcardfeature.netlify.app/)
 
 ## My process
